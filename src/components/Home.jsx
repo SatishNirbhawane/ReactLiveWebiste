@@ -8,7 +8,7 @@ const Home = () => {
         <Common
             name='Grow your Business With '
             imgsrc={web}
-            visit="/Home"
+            visit="/about"
             btnname="Gate Started" />
 
 

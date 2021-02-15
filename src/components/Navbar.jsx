@@ -1,14 +1,15 @@
 import { NavLink } from "react-router-dom";
+import ImportantDevicesIcon from '@material-ui/icons/ImportantDevices';
 
 const Navbar = () => {
     return (
         <>
             <div className="container-fluid nav_bg">
                 <div className='row'>
-                    <div className='col-10 mx-auto'>
+                    <div className='col-12 mx-auto'>
                         <nav className="navbar navbar-expand-lg navbar-light bg-light">
                             <div className="container-fluid">
-                                <NavLink className="navbar-brand" to="#">Satish-Technical</NavLink>
+                                <NavLink className="navbar-brand" to="#">Satish-Technical <ImportantDevicesIcon/></NavLink>
                                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                                     <span className="navbar-toggler-icon"></span>
                                 </button>
@@ -27,12 +28,14 @@ const Navbar = () => {
                                             <NavLink activeClassName="menu_active" exact className="nav-link" to="/blog">Blog</NavLink>
                                         </li> */}
                                         <li className="nav-item">
-                                            <NavLink activeClassName="menu_active" exact className="nav-link" to="/about">AboutUs</NavLink>
+                                            <NavLink activeClassName="menu_active" exact className="nav-link" to="/about">About</NavLink>
                                         </li>
                                         <li className="nav-item">
-                                            <NavLink activeClassName="menu_active" exact className="nav-link" to="/contact">ContactUs</NavLink>
+                                            <NavLink activeClassName="menu_active" exact className="nav-link" to="/contact">Contact</NavLink>
                                         </li>
-
+                                        <li className="nav-item">
+                                            <NavLink  activeClassName="menu_active" exact className="nav-link" to="/login" >Login</NavLink>
+                                        </li>
 
 
                                     </ul>

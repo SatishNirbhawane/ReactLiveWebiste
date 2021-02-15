@@ -13,20 +13,23 @@ import Navbar from "./components/Navbar";
 import AboutUS from "./components/AboutUS";
 import Blog from "./components/Blog";
 import Footer from "./components/Footer";
+import Login from "./components/Login";
 
 
 const App = () => {
   return (
     <>
-      <Navbar />
+       <Navbar />
       <Switch>
         <Route exact path='/' ><Home /></Route>
         <Route exact path='/services' component={Services}><Services /></Route>
-        <Route exact path='/blog' component={Blog}><Blog /></Route>
+        {/* <Route exact path='/blog' component={Blog}><Blog /></Route> */}
         <Route exact path='/about' component={AboutUS}><AboutUS /></Route>
         <Route exact path='/contact' component={ContactUs}><ContactUs /></Route>
+        <Route exact path='/login' component={Login}/>
+
       </Switch>
-      <Footer />
+      <Footer /> 
     </>
   );
 

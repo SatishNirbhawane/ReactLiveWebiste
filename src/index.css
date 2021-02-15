@@ -7,17 +7,17 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Mulish', sans-serif;
+  font-family: 'Serif', sans-serif;
   background-color: #fff;
 }
 .navbar
 {
-  background-color: #fff !important;
+  background-color:#fff!important;
 }
 .navbar-brand
 {
 font-size: 1.9rem !important;
-color: #3498db !important;
+color: #2290da !important;
 }
 
 .navbar a
@@ -27,7 +27,7 @@ text-transform: capitalize;
 }
 .menu_active
 {
-  font-weight: bold;
+  /* font-weight: bold; */
   border-bottom:1px solid #565387 ;
 }
 .navbar a:hover
@@ -37,6 +37,8 @@ text-transform: capitalize;
 .navbar-nav
 {
 margin-left: auto;
+background: cyan;
+
 }
 @media(max-width:991px)
 {
@@ -89,6 +91,20 @@ margin-left: auto;
   background: #3498db;
   color: #fff;
 }
+/* 
+#mainbtn{
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 50px;
+  transition: 0.5s;
+  color: #3498db;
+  border: 2px solid #3498db;
+  text-decoration: none;
+
+} */
 
 .header-img
 {
@@ -100,6 +116,10 @@ margin-left: auto;
   animation: up-down 2s ease-in-out infinite alternate-reverse both;
 }
 
+#navbarSupportedContent
+{
+  background-color:#fff;
+}
 @-webkit-keyframes up-down{
   0%{
     transform: translateY(10px);
